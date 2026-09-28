@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xero Error Codes 400, 401, 403, 404 and 500, Decoded</title>
+<meta name="description" content="Xero errors 400, 401, 403, 404 and 500 are standard HTTP codes: bad request, login, permissions, not found, server. What each means and the fix.">
+<link rel="canonical" href="https://lewis-goat.github.io/accounting-error-codes/xero-error-codes-400-500.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xero Error Codes 400, 401, 403, 404 and 500, Decoded">
+<meta property="og:description" content="Xero errors 400, 401, 403, 404 and 500 are standard HTTP codes: bad request, login, permissions, not found, server. What each means and the fix.">
+<meta property="og:url" content="https://lewis-goat.github.io/accounting-error-codes/xero-error-codes-400-500.html">
+<meta property="og:site_name" content="LedgerFix">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lewis-goat.github.io/accounting-error-codes/og-image.png">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0b5cad">
+<meta property="og:image" content="https://lewis-goat.github.io/accounting-error-codes/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="License Roadmap — trade and professional license guides">
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>
+<link rel="dns-prefetch" href="https://fundingchoicesmessages.google.com">
+<!-- AdSense: uncomment + insert pub id after the site is added to the AdSense account
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0000000000000000" crossorigin="anonymous"></script>
+-->
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Xero Error Codes 400, 401, 403, 404 and 500, Decoded", "description": "Xero errors 400, 401, 403, 404 and 500 are standard HTTP codes: bad request, login, permissions, not found, server. What each means and the fix.", "url": "https://lewis-goat.github.io/accounting-error-codes/xero-error-codes-400-500.html", "image": ["https://lewis-goat.github.io/accounting-error-codes/og-image.png"], "datePublished": "2026-09-28", "dateModified": "September 28, 2026", "author": {"@type": "Organization", "name": "LedgerFix"}, "publisher": {"@type": "Organization", "name": "LedgerFix", "logo": {"@type": "ImageObject", "url": "https://lewis-goat.github.io/accounting-error-codes/apple-touch-icon.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "LedgerFix", "item": "https://lewis-goat.github.io/accounting-error-codes/"}, {"@type": "ListItem", "position": 2, "name": "Xero Error Codes 400, 401, 403, 404 and 500, Decoded", "item": "https://lewis-goat.github.io/accounting-error-codes/xero-error-codes-400-500.html"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What do Xero error codes 400 to 500 mean?", "acceptedAnswer": {"@type": "Answer", "text": "Xero reuses the standard HTTP status codes: 400 means the request was malformed (often a bad import file or form entry), 401 an authentication problem, 403 your user lacks permission for that action, 404 the record was not found, and 500 a fault on Xero's side. Reading the number as a category is the whole trick."}}, {"@type": "Question", "name": "Which Xero errors are mine to fix?", "acceptedAnswer": {"@type": "Answer", "text": "400, 401, 403 and 404: something in your request, login or permissions is wrong, and a correction on your side fixes them. 500-family errors are Xero server faults — retry later, check the Xero status page, and only then contact support."}}, {"@type": "Question", "name": "What is the 'account must be valid' Xero error?", "acceptedAnswer": {"@type": "Answer", "text": "A validation error (shown with a 400) where a transaction references an account that is inactive, archived or of the wrong type — commonly in imports and bank rules. Fix the referenced account in Settings → Chart of accounts, or correct the row, then retry."}}, {"@type": "Question", "name": "Why does Xero 401 happen with a connected bank?", "acceptedAnswer": {"@type": "Answer", "text": "The bank-feed authorization token has expired or been revoked. Re-authenticate the bank connection from the Banking menu — the 401 clears the moment the fresh consent is stored."}}, {"@type": "Question", "name": "Do 500 errors mean my data is at risk?", "acceptedAnswer": {"@type": "Answer", "text": "No. A 500 means the server refused or failed to complete the request; nothing about it implies data loss. Retry the action after checking the Xero status page for an incident."}}]}]</script>
+<style>
+:root{--ink:#1a2332;--muted:#5a6b7f;--bg:#fbfbf9;--card:#fff;--accent:#0b5cad;--line:#e4e7eb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;-webkit-text-size-adjust:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:var(--ink);background:var(--bg);max-width:46rem;margin:0 auto;padding:1.2rem 1.1rem 3rem}
+header.site{border-bottom:2px solid var(--ink);padding:.4rem 0 1rem;margin-bottom:1.6rem}
+header.site p{color:var(--muted);font-size:.92rem}
+h1{font-size:1.72rem;line-height:1.25;margin:.2rem 0 .9rem;letter-spacing:-.01em}
+h2{font-size:1.28rem;margin:1.8rem 0 .6rem;letter-spacing:-.01em}
+h3{font-size:1.06rem;margin:1.3rem 0 .4rem}
+p,ul,ol,table{margin:.65rem 0}
+li{margin:.3rem 0}
+a{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.1rem 1.25rem;margin:1rem 0}
+.card h2{margin-top:.2rem}
+.card p.meta{font-size:.85rem;color:var(--muted);margin:.1rem 0 .4rem}
+.meta{color:var(--muted);font-size:.88rem}
+.updated{color:var(--muted);font-size:.85rem;margin-bottom:1.2rem}
+.toc{background:#f2f5f8;border:1px solid var(--line);border-radius:10px;padding:.9rem 1.2rem;margin:0 0 1.4rem;font-size:.92rem}
+.toc strong{display:block;margin-bottom:.3rem}
+.toc ul{margin:.2rem 0;list-style:none}
+.faq{margin:.4rem 0}
+.faq h3{margin:1rem 0 .2rem}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:.45rem .6rem;text-align:left;vertical-align:top}
+th{background:#f2f5f8}
+blockquote{border-left:4px solid var(--line);padding:.2rem 0 .2rem 1rem;color:var(--muted);margin:.8rem 0}
+code{background:#eef1f4;border-radius:4px;padding:.1rem .35rem;font-size:.88em}
+pre{background:#1a2332;color:#e8edf2;border-radius:8px;padding:1rem;overflow-x:auto}
+pre code{background:none;color:inherit;padding:0}
+footer.site{border-top:1px solid var(--line);margin-top:2.4rem;padding-top:1rem;font-size:.85rem;color:var(--muted)}
+footer.site nav{display:flex;flex-wrap:wrap;gap:.4rem .9rem;margin:.4rem 0}
+.adslot{margin:1.6rem 0;border:1px dashed #c9d2db;border-radius:8px;padding:.55rem;text-align:center;color:#8a97a5;font-size:.78rem;background:#f6f8fa}
+.crumb{font-size:.85rem;color:var(--muted);margin-bottom:.7rem}
+.share{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0;align-items:center}
+.share span.lbl{font-size:.82rem;color:var(--muted);margin-right:.2rem}
+.share a{text-decoration:none;font-size:.8rem;border:1px solid var(--line);border-radius:6px;padding:.25rem .55rem;color:var(--ink);background:#fff}
+.share a:hover{border-color:var(--accent);color:var(--accent)}
+@media print{.adslot,nav{display:none}}
+.adlabel{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:#8a97a5;text-align:center;margin-bottom:2px}
+.admock{border:1px dashed #b8c4cf;border-radius:6px;background:linear-gradient(135deg,#fdf9e7,#fef4d8);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#7a6c33;text-align:center;padding:.4rem;min-height:60px}
+.admock strong{font-size:.85rem;font-weight:600}
+.admock span{font-size:.68rem;color:#a09048}
+.preview-note{background:#eaf3fb;border:1px solid #bcd8ef;border-radius:8px;padding:.7rem 1rem;font-size:.85rem;margin-bottom:1.2rem}
+.preview-wrap{display:grid;grid-template-columns:minmax(0,46rem) 300px;gap:2rem;justify-content:center;align-items:start}
+.preview-side{position:sticky;top:1rem;display:none}
+@media(min-width:1101px){.preview-side{display:block}}
+@media(max-width:1100px){.preview-wrap{grid-template-columns:minmax(0,46rem)}}
+</style>
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" href="/favicon.ico" sizes="96x96 48x48 32x32 16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+<header class="site"><a href="index.html"><strong>LedgerFix</strong></a>
+<p>Accounting software error codes, explained with the fix first — QuickBooks, Sage 50, Xero.</p></header>
+<nav class="crumb" aria-label="breadcrumb"><a href="index.html">LedgerFix</a> / Xero Error Codes 400, 401, 403, 404 and 500, Dec</nav>
+<h1>Xero Error Codes 400, 401, 403, 404 and 500, Decoded</h1>
+<p class="updated">Last updated: September 28, 2026</p>
+<main><div class="share" aria-label="share this page"><span class="lbl">Share:</span><a href="https://twitter.com/intent/tweet?text=Xero%20Error%20Codes%20400%2C%20401%2C%20403%2C%20404%20and%20500%2C%20Decoded&url=https%3A%2F%2Flewis-goat.github.io%2Faccounting-error-codes%2Fxero-error-codes-400-500.html" rel="noopener" target="_blank">X / Twitter</a><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flewis-goat.github.io%2Faccounting-error-codes%2Fxero-error-codes-400-500.html" rel="noopener" target="_blank">Facebook</a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flewis-goat.github.io%2Faccounting-error-codes%2Fxero-error-codes-400-500.html" rel="noopener" target="_blank">LinkedIn</a><a href="https://wa.me/?text=Xero%20Error%20Codes%20400%2C%20401%2C%20403%2C%20404%20and%20500%2C%20Decoded%20https%3A%2F%2Flewis-goat.github.io%2Faccounting-error-codes%2Fxero-error-codes-400-500.html" rel="noopener" target="_blank">WhatsApp</a><a href="mailto:?subject=Xero%20Error%20Codes%20400%2C%20401%2C%20403%2C%20404%20and%20500%2C%20Decoded&body=https%3A%2F%2Flewis-goat.github.io%2Faccounting-error-codes%2Fxero-error-codes-400-500.html">Email</a></div><nav class="toc" aria-label="table of contents"><strong>On this page</strong><ul><li><a href="#400-bad-request-usually-your-data">400 — Bad request (usually your data)</a></li><li><a href="#401-unauthorized-your-session-or-consent">401 — Unauthorized (your session or consent)</a></li><li><a href="#403-forbidden-permissions-not-password">403 — Forbidden (permissions, not password)</a></li><li><a href="#404-not-found">404 — Not found</a></li><li><a href="#500-and-502503504-xeros-side">500 (and 502/503/504) — Xero&#x27;s side</a></li><li><a href="#the-one-click-triage-table">The one-click triage table</a></li></ul></nav><p>Xero's error style is different from QuickBooks' numbered codes: Xero surfaces the <strong>standard HTTP status codes</strong> — the same numbers the web itself runs on — plus validation messages like "account must be valid." Once you read the number as a category, these errors become surprisingly orderly. Here is each code in the family, what it means in Xero specifically, and what you can actually do about it.</p>
+<h2 id="400-bad-request-usually-your-data">400 — Bad request (usually your data)</h2>
+<p>The request itself was malformed. In day-to-day Xero this is almost always <strong>validation</strong>: an import row with a bad date format, a bank rule pointing at an archived account, a transaction with an amount field Xero cannot parse. The screen or import report usually names the field.</p>
+<p><strong>What to do:</strong> fix the named field or row and resubmit. For imports, correct the row in the file (or the mapping) rather than retrying the whole file — Xero's import reports identify the exact rows that failed with their reasons.</p>
+<h2 id="401-unauthorized-your-session-or-consent">401 — Unauthorized (your session or consent)</h2>
+<p>Authentication failed: expired login session, or — the common modern case — a <strong>bank-feed or integration consent that has lapsed</strong>. Apps connected via the Xero API show 401s when their token expires without refresh.</p>
+<p><strong>What to do:</strong> sign in again; for bank connections, re-authorize the feed from the Banking area; for third-party add-ons, reconnect the app from Settings → Connections. A 401 that persists with correct credentials is a support matter, but it is rare.</p>
+<h2 id="403-forbidden-permissions-not-password">403 — Forbidden (permissions, not password)</h2>
+<p>You are authenticated but not allowed the action — a standard user without the adviser role trying a settings change, or an employee-level login touching payroll.</p>
+<p><strong>What to do:</strong> an organization adviser grants the role (Settings → Users), or the action is performed by someone who holds it. 403 is policy, not malfunction: nothing is broken.</p>
+<h2 id="404-not-found">404 — Not found</h2>
+<p>The record the request referenced does not exist (deleted invoice, removed contact, wrong URL in a bookmark or integration). Integrations hit 404s when a Xero record they cached has been deleted on the other side.</p>
+<p><strong>What to do:</strong> find the record afresh (search the contact/invoice) rather than following the stale link; for integrations, resync so they re-fetch current record IDs. A 404 on Xero's own pages after an update usually means a stale bookmark — navigate from the dashboard instead.</p>
+<h2 id="500-and-502503504-xeros-side">500 (and 502/503/504) — Xero's side</h2>
+<p>A server fault. <strong>500</strong> is a general failure; <strong>502/504</strong> typically appear as gateway timeouts under load or during incidents.</p>
+<p><strong>What to do:</strong> wait, then retry. Check the <a href="https://status.xero.com">Xero status page</a> for an incident before doing anything else. If an action 500s repeatedly while the status page is green, capture the exact steps and contact Xero support — but do not rebuild data on the suspicion that 500s imply corruption; they do not.</p>
+<h2 id="the-one-click-triage-table">The one-click triage table</h2>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Whose fault</th>
+<th>First move</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>Yours (the data)</td>
+<td>Fix the named field/row</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Credentials/consent</td>
+<td>Re-login or re-authorize the connection</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Permissions</td>
+<td>Ask an adviser to grant the role</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Stale reference</td>
+<td>Find the record afresh; resync integrations</td>
+</tr>
+<tr>
+<td>500–504</td>
+<td>Xero's</td>
+<td>Retry after checking status.xero.com</td>
+</tr>
+</tbody>
+</table>
+<p>That table is 90% of Xero error handling: read the number, apply the category's move, escalate only what survives it.</p>
+<p><em>Meanings follow Xero's help-center documentation of HTTP status errors and standard HTTP semantics. This page is general information, not Xero support.</em></p><section><h2 id="faq">Frequently asked questions</h2><div class="faq"><h3>What do Xero error codes 400 to 500 mean?</h3><p>Xero reuses the standard HTTP status codes: 400 means the request was malformed (often a bad import file or form entry), 401 an authentication problem, 403 your user lacks permission for that action, 404 the record was not found, and 500 a fault on Xero's side. Reading the number as a category is the whole trick.</p></div><div class="faq"><h3>Which Xero errors are mine to fix?</h3><p>400, 401, 403 and 404: something in your request, login or permissions is wrong, and a correction on your side fixes them. 500-family errors are Xero server faults — retry later, check the Xero status page, and only then contact support.</p></div><div class="faq"><h3>What is the &#x27;account must be valid&#x27; Xero error?</h3><p>A validation error (shown with a 400) where a transaction references an account that is inactive, archived or of the wrong type — commonly in imports and bank rules. Fix the referenced account in Settings → Chart of accounts, or correct the row, then retry.</p></div><div class="faq"><h3>Why does Xero 401 happen with a connected bank?</h3><p>The bank-feed authorization token has expired or been revoked. Re-authenticate the bank connection from the Banking menu — the 401 clears the moment the fresh consent is stored.</p></div><div class="faq"><h3>Do 500 errors mean my data is at risk?</h3><p>No. A 500 means the server refused or failed to complete the request; nothing about it implies data loss. Retry the action after checking the Xero status page for an incident.</p></div></section><h2>Keep reading</h2><ul><li><a href="quickbooks-error-h202.html">QuickBooks Error H202: What It Means and How to Fix It</a></li><li><a href="quickbooks-error-6190-6000-77.html">QuickBooks Error -6190, -6000, -77: Company File Mismatch, Fixed</a></li><li><a href="sage-50-error-connecting-to-database.html">Sage 50 Error Connecting to Database: The Actian Fix</a></li></ul></main>
+<footer class="site">
+<nav><a href="index.html">Home</a> <a href="about.html">About</a> <a href="contact.html">Contact</a> <a href="privacy.html">Privacy Policy</a></nav>
+<p>© 2026 LedgerFix. Content is for informational purposes only and is not financial, tax, or legal advice. Error meanings and fixes change with software versions.</p>
+</footer>
+</body>
+</html>

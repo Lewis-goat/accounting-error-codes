@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lewis-goat.github.io/accounting-error-codes/sitemap.xml
